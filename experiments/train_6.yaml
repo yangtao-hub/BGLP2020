@@ -1,0 +1,24 @@
+dataset:
+  script_path: ../datasets/loaddataset.py
+  train_path: ../datasets/excel/XXX-train.xlsx
+  test_path: ../datasets/excel/XXX-test.xlsx
+  attributions: ['glucose_level_value','timestamp','basal_value','bolus_dose','meal_carbs']
+  past_steps: [21, 21, 24, 24, 24]
+  future_steps: 6
+  train_fraction: 0.9
+model:
+  script_path: ../models/ms-lstm.py
+optimizer:
+  script_path: ../optimizers/adam_keras.py
+  learning_rate: 1e-4
+  decay: 0.0
+loss_function:
+  script_path: ../loss_functions/rmse_keras.py
+train:
+  script_path: ../train/train_keras.py
+  artifacts_path: ../artifacts/6_steps
+  batch_size: 1024
+  epochs: 5000
+  patience: 300
+  shuffle: True
+  seed: 0
