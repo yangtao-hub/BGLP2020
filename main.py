@@ -287,9 +287,6 @@ def main(yaml_filepath, mode, PID):
 
         # Loading the dataset
         print("*****************Loading dataset*****************")
-        # Set random seeds for GPR model
-        seed = int(cfg['train']['seed'])
-        # randomset.random_set(seed)
         x_train, y_train, x_valid, y_valid, x_test, y_test = module_dataset.load_dataset(cfg['dataset'])
         print("x_train.shape: ", x_train.shape)
         print("y_train.shape: ", y_train.shape)
@@ -301,6 +298,7 @@ def main(yaml_filepath, mode, PID):
         # Loading the model
         print("*****************Loading model*****************")
         # Set random seeds for model training
+        seed = int(cfg['train']['seed'])
         randomset.random_set(seed)
         optimizer = module_optimizer.load(cfg['optimizer'])
         loss_function = module_loss_function.load()
