@@ -47,7 +47,7 @@ smop==0.41
 statsmodels==0.11.1
 TBB==0.1
 tensorboard==1.12.0
-tensorflow==1.12.0
+tensorflow==2.5.1
 termcolor==1.1.0
 tornado==6.0.3
 tqdm==4.42.1
