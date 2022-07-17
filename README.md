@@ -1,4 +1,11 @@
 # Citation
+@inproceedings{yang2020multi,
+  title={Multi-Scale Long Short-Term Memory Network with Multi-Lag Structure for Blood Glucose Prediction.},
+  author={Yang, Tao and Wu, Ruikun and Tao, Rui and Wen, Shuang and Ma, Ning and Zhao, Yuhang and Yu, Xia and Li, Hongru},
+  booktitle={KDH@ ECAI},
+  pages={136--140},
+  year={2020}
+}
 
 # Prerequisites
 The code is designed to be run on the OhioT1DM Dataset.
