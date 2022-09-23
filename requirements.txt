@@ -30,7 +30,7 @@ phased-lstm-keras==1.0.2
 Pillow==7.0.0
 pipreqs==0.4.10
 ply==3.11
-protobuf==3.11.2
+protobuf==3.18.3
 pyparsing==2.4.6
 pypinyin==0.38.0
 pyreadline==2.1
